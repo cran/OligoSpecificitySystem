@@ -1,0 +1,12 @@
+*   1BraSp249 Bradyrhizobium sp. Ls82                                                    0     0  0.0 41540  1368 0   AGCACGCCA-==================-GCCUUGUAC
+*   2Unc01san uncultured bacterium                                                       0     0  0.0 41540  1368 0   AGCAUGUCG-==================-GCCUUGUAC
+*   3UncHa789 uncultured Haemophilus sp.                                                 0     0  0.0 41540  1368 0   AGAAUGUCG-==================-GCCUUGUAC
+*   4Unc01oeh uncultured bacterium                                                       0     0  0.0 41540  1368 0   AGAAUGCCA-==================-GCCUUGUAC
+*   UncC9617 uncultured crenarchaeote           2     0  2.6 41540  1368 0   AUCAACGCG-============C====C-UCCUUGCAC
+*   UncC9019 uncultured crenarchaeote           2     0  2.6 41540  1368 0   AUCAUCGCG-============C====C-UCCUUGCAC
+*   UncC9330 uncultured crenarchaeote           2     0  2.6 41540  1368 0   AUCAUCGCG-============C====C-UCCUUGCAC
+*   Unc01lfd uncultured archaeon                1     0  1.5 41540  1368 0   ACUACCUCG-================U=-UCUCCUGUC
+*   G03Camin Aeropyrum camini                   2     0  2.1 41540  1368 0   AUCAUCGCG-===============u=C-U
+*   UncC9905 uncultured crenarchaeote           2     0  2.6 41540  1368 0   AUCAUCGCG-============C====C-UCCUUGCAC
+*   UncC9393 uncultured crenarchaeote           2     0  2.6 41540  1368 0   AUCAUCGCG-============C====C-UCCUUGCAC
+*   UncC9295 uncultured crenarchaeote           2     0  2.6 41540  1368 0   AUCAUCGCG-============C====C-UCCUUGCAC

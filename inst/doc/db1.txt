@@ -1,0 +1,16 @@
+*   1BraSp249 Bradyrhizobium sp. Ls82                                                    0     0  0.0 41540  1368 0   AGCACGCCA-==================-GCCUUGUAC
+*   2Unc01san uncultured bacterium                                                       0     0  0.0 41540  1368 0   AGCAUGUCG-==================-GCCUUGUAC
+*   3UncHa789 uncultured Haemophilus sp.                                                 0     0  0.0 41540  1368 0   AGAAUGUCG-==================-GCCUUGUAC
+*   4Unc01oeh uncultured bacterium                                                       0     0  0.0 41540  1368 0   AGAAUGCCA-==================-GCCUUGUAC
+*   5VarPar50 Variovorax paradoxus                                                       0     0  0.0 41540  1368 0   AGCUUGCCG-==================-GUCUUGUAC
+
+*   6Unc05c4t uncultured bacterium                                                       0     0  0.0 41540  1368 0   AGCAUGACG-==================-GCCUUGUAC
+*   7UncHa780 uncultured Halomonas sp.                                                   0     0  0.0 41540  1368 0   AGAAUGUCA-==================-GC
+*   8Unc01sgv uncultured bacterium                                                       0     0  0.0 41540  1368 0   AGCAUGACG-==================-GCCUUGUAC
+*   9AchXyl58 Achromobacter xylosoxidans subsp. xylosoxidans                             0     0  0.0 41540  1368 0   AGCAUGUCG-==================-GUCUUGUAC
+*   10Unc01nnw uncultured bacterium                                                       0     0  0.0 41540  1368 0   AGAAUGUUG-==================-GCCUUGUAC
+*   11UncEp938 uncultured epsilon proteobacterium                                         0     0  0.0 41540  1368 0   GCCAUGCUA-==================-GUCUUGUAC
+*   12UncHa784 uncultured Halomonas sp.                                                   0     0  0.0 41540  1368 0   AGAAUGCUA-==================-GC
+*   13UncHa705 uncultured Halomonas sp.                                                   0     0  0.0 41540  1368 0   AGAAUGUCA-==================-G
+*   14Unc05c6b uncultured bacterium                                                       0     0  0.0 41540  1368 0   AGCGCGCCG-==================-GUCUUGUAC
+*   Unc01lfd uncultured archaeon                1     0  1.5 41540  1368 0   ACUACCUCG-================U=-UCUCCUGUC
