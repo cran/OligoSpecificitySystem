@@ -21,6 +21,7 @@
 \alias{pcrcal3}
 \alias{pcrcal4}
 \alias{security}
+\alias{waitGUI}
 \title{Internal functions for the Oligo Specificity System package}
 \description{Internal functions for the Oligo Specificity System package}
 \details{

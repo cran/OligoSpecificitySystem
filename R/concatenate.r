@@ -1,7 +1,8 @@
 "concatenate"<-function(){
 nwd<-0;nwd<<-nwd
-if(length(txt3)==1) nwd<-levels(as.factor(c(txt1,txt2)))
-if(length(txt3)!=1) nwd<-levels(as.factor(c(txt1,txt2,txt3)))
+if(length(txt3)==1 & length(txt4)==1) nwd<-levels(as.factor(c(txt1,txt2)))
+if(length(txt3)!=1 & length(txt4)==1) nwd<-levels(as.factor(c(txt1,txt2,txt3)))
+if(length(txt4)!=1)nwd<-txt4
 nwd<<-nwd
 
 tt1<-tktoplevel()

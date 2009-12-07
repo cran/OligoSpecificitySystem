@@ -59,31 +59,40 @@
                       OnOk()
                       print("Please wait while loading")
                       ONDB1name<<-fil
-                      txt1<-scan(file=fil,what="character",fill=TRUE)
+                      txt1<-scan(file=fil,what="character",fill=TRUE,quiet=TRUE)
                       a<-which(txt1==separator)
-                      a<-a+1
-                      txt1<-txt1[a]
-                      txt1<<-txt1
+                      b<-vector(length=length(a))
+                      for (i in 1:c(length(a)-1)){
+                      b[i]<-paste(txt1[c(a[i]+1):c(a[i+1]-1)],collapse="")}
+                      b[length(a)]<-paste(txt1[c(a[length(a)]+1):length(txt1)],collapse="")
+                      txt1<<-b
+                      print(paste("Your oligonucleotide database has",length(b),"sequences"))
                       print("DataBase 1 successfully imported")}
   example2<-function(){optxt(n=2)
                       OnOk()
                       print("Please wait while loading")
                       ONDB2name<<-fil
-                      txt2<-scan(file=fil,what="character",fill=TRUE)
+                      txt2<-scan(file=fil,what="character",fill=TRUE,quiet=TRUE)
                       a<-which(txt2==separator)
-                      a<-a+1
-                      txt2<-txt2[a]
-                      txt2<<-txt2
+                      b<-vector(length=length(a))
+                      for (i in 1:c(length(a)-1)){
+                      b[i]<-paste(txt2[c(a[i]+1):c(a[i+1]-1)],collapse="")}
+                      b[length(a)]<-paste(txt2[c(a[length(a)]+1):length(txt2)],collapse="")
+                      txt2<<-b
+                      print(paste("Your oligonucleotide database has",length(b),"sequences"))
                       print("DataBase 2 successfully imported")}
   example3<-function(){optxt(n=3)
                       OnOk()
                       print("Please wait while loading")
                       ONDB3name<<-fil
-                      txt3<-scan(file=fil,what="character",fill=TRUE)
+                      txt3<-scan(file=fil,what="character",fill=TRUE,quiet=TRUE)
                       a<-which(txt3==separator)
-                      a<-a+1
-                      txt3<-txt3[a]
-                      txt3<<-txt3
+                      b<-vector(length=length(a))
+                      for (i in 1:c(length(a)-1)){
+                      b[i]<-paste(txt3[c(a[i]+1):c(a[i+1]-1)],collapse="")}
+                      b[length(a)]<-paste(txt3[c(a[length(a)]+1):length(txt3)],collapse="")
+                      txt3<<-b
+                      print(paste("Your oligonucleotide database has",length(b),"sequences"))
                       print("DataBase 3 successfully imported")}
   export1<-function(){exportglobal(n=1)}
   export2<-function(){exportglobal(n=2)}
@@ -115,8 +124,7 @@
   dprimconc<-function(){
           security()
           OnOk()
-          if(length(txt4)==1) concatenate()
-          if(length(txt4)!=1) tkmessageBox(message="Sorry this function is not available for more than 3 oligonucleotide databases")}
+          concatenate()}
   effic<-function(){
           security()
           OnOk()

@@ -1,7 +1,7 @@
 Package: OligoSpecificitySystem
 Title: Oligo Specificity System
-Version: 1.0
-Date: 2009-10-15
+Version: 1.1
+Date: 2009-12-07
 Author: Rory Michelland <rory.michelland@gmail.com>,Laurent Cauquil
         <laurent.cauquil@toulouse.inra.fr>
 Maintainer: Laurent Cauquil <laurent.cauquil@toulouse.inra.fr>
@@ -10,6 +10,6 @@ Description: Calculate the theorical specificity of a system of
         primer design
 Depends: tcltk,tkrplot
 License: GPL-2
-Packaged: 2009-11-25 11:06:27 UTC; Rory
+Packaged: 2009-12-08 09:00:05 UTC; Rory
 Repository: CRAN
-Date/Publication: 2009-11-26 08:03:07
+Date/Publication: 2009-12-09 09:42:07
