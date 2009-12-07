@@ -12,9 +12,12 @@
     if(i/1000==round(i/1000)) waitGUI(i,c(length(a)-1))
     b[i]<-paste(txt1[c(a[i]+1):c(a[i+1]-1)],collapse="")}
     b[length(a)]<-paste(txt1[c(a[length(a)]+1):length(txt1)],collapse="")
-    txt1<<-b
     if(length(a)>=1000) dev.off()
     print(paste("Your oligonucleotide database has",length(b),"sequences"))
+    c<-levels(factor(b))
+    txt1<<-c
+    if (length(c)!=length(b)) print("but has sequences in several copies") 
+    if (length(c)!=length(b))print(paste("Your oligonucleotide database has",c(length(c)),"unique sequences"))
     print("DataBase 1 successfully imported")
   }
   

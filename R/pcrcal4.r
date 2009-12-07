@@ -1,11 +1,17 @@
 "pcrcal4"<-function(){
-if (val==3 & nbsequence=="optional") tkmessageBox(message=paste("Oligonucleotides set matchs ",(length(which(summary(factor(txt4))==length(dimtemp))))," common sequences"))
-if (val==2 & nbsequence=="optional") tkmessageBox(message=paste("Oligonucleotides set matchs ",(length(which(summary(factor(txt4))==length(c(dimtemp))-1)))," common sequences"))
-if (val==1 & nbsequence=="optional") tkmessageBox(message=paste("Oligonucleotides set matchs ",(length(which(summary(factor(txt4))==length(c(dimtemp))-2)))," common sequences"))
-if (val==0 & nbsequence=="optional") tkmessageBox(message=paste("Oligonucleotides set matchs ",(length(which(summary(factor(txt4))==length(c(dimtemp))-3))-1)," common sequences"))
+val<-vector(length=4);val[]<-0
+     val[1]<-length(myfiles)
+     if (length(txt1)!=1) val[2]<-1
+     if (length(txt2)!=1) val[3]<-1
+     if (length(txt3)!=1) val[4]<-1
+     val<-sum(val)
+     val<<-val
+a=summary(factor(c(txt1,txt2,txt3,txt4)),maxsum=length(levels(factor(c(txt1,txt2,txt3,txt4)))))
 
-if (val==3 & nbsequence!="optional") tkmessageBox(message=paste("Oligonucleotides set matchs ",c(round(((length(which(summary(factor(txt4))==length(dimtemp))))/as.numeric(nbsequence))*100))," % of common sequences"))
-if (val==2 & nbsequence!="optional") tkmessageBox(message=paste("Oligonucleotides set matchs ",c(round(((length(which(summary(factor(txt4))==length(c(dimtemp))-1)))/as.numeric(nbsequence))*100))," % of common sequences"))
-if (val==1 & nbsequence!="optional") tkmessageBox(message=paste("Oligonucleotides set matchs ",c(round(((length(which(summary(factor(txt4))==length(c(dimtemp))-2)))/as.numeric(nbsequence))*100))," % of common sequences"))
-if (val==0 & nbsequence!="optional") tkmessageBox(message=paste("Oligonucleotides set matchs ",c(round(((length(which(summary(factor(txt4))==length(c(dimtemp))-3))-1)/as.numeric(nbsequence))*100))," % of common sequences"))
+if(length(which(c(txt1,txt2,txt3,txt4)==0))==val) ff<- length(which(a==val))-1
+if(length(which(c(txt1,txt2,txt3,txt4)==0))!=val) ff<- length(which(a==val))
+
+if (nbsequence=="optional") tkmessageBox(message=paste("Oligonucleotides set matchs ",ff," common sequences"))
+
+if (nbsequence!="optional") tkmessageBox(message=paste("Oligonucleotides set matchs ",c(round((ff/as.numeric(nbsequence))*100))," % of common sequences"))
 }
