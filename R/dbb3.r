@@ -6,6 +6,10 @@
     print("Please wait while loading")
     txt3<-scan(file=fil3,what="character",fill=TRUE,quiet=TRUE)
     a<-which(txt3==separator)
+    if(length(a)==0) txt3<-unlist(strsplit(txt3,""))
+    if(length(a)==0) a<-which(txt3==separator)
+    if(length(a)==0) tkmessageBox(message="The specified separator is not found in your oligonucleotide database.")
+    if(length(a)==0) stop()
     b<-vector(length=length(a))
     for (i in 1:c(length(a)-1)){
     if(i/1000==round(i/1000)) waitGUI(i,c(length(a)-1))

@@ -7,6 +7,10 @@
     ONDB1name<<-fil1
     txt1<-scan(file=fil1,what="character",fill=TRUE,quiet=TRUE)
     a<-which(txt1==separator)
+    if(length(a)==0) txt1<-unlist(strsplit(txt1,""))
+    if(length(a)==0) a<-which(txt1==separator)
+    if(length(a)==0) tkmessageBox(message="The specified separator is not found in your oligonucleotide database.")
+    if(length(a)==0) stop()
     b<-vector(length=length(a))
     for (i in 1:c(length(a)-1)){
     if(i/1000==round(i/1000)) waitGUI(i,c(length(a)-1))

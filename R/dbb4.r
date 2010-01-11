@@ -13,6 +13,10 @@
       txttemp<-0
       txttemp<-scan(file=myfiles[j],what="character",fill=TRUE,quiet=TRUE)
       a<-which(txttemp==separator)
+      if(length(a)==0) txttemp<-unlist(strsplit(txttemp,""))
+    if(length(a)==0) a<-which(txttemp==separator)
+    if(length(a)==0) tkmessageBox(message="The specified separator is not found in your oligonucleotide database.")
+    if(length(a)==0) stop()
     b<-vector(length=length(a))
     for (i in 1:c(length(a)-1)){
     if(i/1000==round(i/1000)) waitGUI(i,c(length(a)-1))
